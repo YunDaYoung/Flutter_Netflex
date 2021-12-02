@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflex_flutter/screen/home_screen.dart';
 import 'package:netflex_flutter/widget/bottom_bar.dart';
 
 void main() {
@@ -25,10 +26,7 @@ class _MyAppState extends State<MyApp> {
             body: TabBarView(
               physics: NeverScrollableScrollPhysics(),
               children: <Widget>[
-                Container(
-                    child: const Center(
-                  child: Text('home'),
-                )),
+                HomeScreen(),
                 Container(
                     child: const Center(
                   child: Text('search'),
@@ -46,6 +44,5 @@ class _MyAppState extends State<MyApp> {
             bottomNavigationBar: Bottom(),
           )),
     );
-    throw UnimplementedError();
   }
 }
